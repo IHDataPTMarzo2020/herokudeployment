@@ -6,8 +6,7 @@ jobs:
       - heroku/install
       - run:
           command: >
-            echo "The command above installs Heroku, the command below deploys.
-            What you do inbetween is up to you!"
+            echo "Comando"
       - heroku/deploy-via-git
 
 version: 2.1
@@ -16,4 +15,4 @@ orbs:
 workflows:
   heroku_deploy:
     jobs:
-      - heroku/deploy-via-git
+      - deploy
